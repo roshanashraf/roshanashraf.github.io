@@ -1,0 +1,119 @@
+
+.work-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.work-card{
+    display: flex;
+    background-color: white;
+    padding: $size-20-px;
+    border-radius: $size-16-px;
+    margin-bottom: $size-20-px;
+    .img-wrapper{
+        height: 200px;
+        width: 400px;
+        flex-shrink: 0;
+        background-color: $background-color;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: $size-20-px;
+        .title-section{
+            display: flex;
+            justify-content: space-between;
+           
+           
+        }
+        .truncate-overflow{
+            
+            max-height: calc(1.5rem * 4);
+            overflow: hidden;
+            &::before {
+                content: "...";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                }
+        }
+        .work-card-footer{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
+
+
+.social-media-card{
+    display: flex;
+    background-color: white;
+    padding: $size-20-px;
+    border-radius: $size-16-px;
+    text-decoration: none;
+    margin-bottom: $size-20-px;
+    .img-wrapper {
+        height: 32px;
+        width: 32px;
+        margin-right: $size-16-px;
+    }
+    .content{
+        .title{
+            margin-bottom: 8px;
+        }
+        .desc{
+            color: $body-text;
+        }
+    }
+
+    &:hover{
+        .content{
+            .title{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+    &.email-card{
+        background-color: $brand-primary;
+        color: white;
+        .title{
+            color: white;
+        }
+        .desc{
+            color: $background-color;
+        }
+    }
+
+}
+
+
+.header-section{
+    .logo{
+        margin-bottom: $size-16-px;
+    }
+    .img-color{
+        height: 100%;
+        margin: 0px 80px;
+        border-radius: $size-16-px;
+       img{
+        width: 400px;
+       }
+    }
+}
+
+.media-links{
+    display: flex;
+   
+    .icon-btn{
+        margin-right: 4px;
+        img{
+            height:24px;
+        }
+    }
+  
+}

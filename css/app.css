@@ -335,6 +335,12 @@ body {
   color: #3E4445;
   line-height: 1.7;
   font-family: "Raleway", sans-serif;
+  padding: 8px 20px;
+}
+@media (min-width: 600px) {
+  body {
+    padding: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -367,7 +373,7 @@ h6 {
   font-size: 1rem;
 }
 
-.body-small, .social-media-card .content .desc, .work-card-new:hover .details .desc {
+.body-small {
   font-size: 14px;
 }
 
@@ -463,36 +469,40 @@ a {
   width: 100%;
 }
 .work-card-new .details {
-  display: none;
+  margin-top: 12px;
 }
-.work-card-new .card-overlay {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
+.work-card-new .details .title {
+  margin-bottom: 4px;
 }
-.work-card-new:hover .card-overlay {
-  display: block;
-}
-.work-card-new:hover .details {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.work-card-new:hover .details .title {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  margin-bottom: 12px;
-}
-.work-card-new:hover .details .desc {
+.work-card-new .details .desc {
+  font-size: 0.75rem;
   color: #3E4445;
+}
+@media (min-width: 1025px) {
+  .work-card-new .details {
+    display: none;
+  }
+  .work-card-new .card-overlay {
+    display: none;
+  }
+  .work-card-new:hover .card-overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+  }
+  .work-card-new:hover .details {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .social-media-card {
@@ -513,7 +523,13 @@ a {
   margin-bottom: 8px;
 }
 .social-media-card .content .desc {
+  font-size: 0.75rem;
   color: #3E4445;
+}
+@media (min-width: 600px) {
+  .social-media-card .content .desc {
+    font-size: 1rem;
+  }
 }
 .social-media-card:hover .content .title {
   text-decoration: underline;
@@ -624,5 +640,9 @@ a {
   position: relative;
   color: #000000;
 }
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+/* smartphones, Android phones, landscape iPhone */
 
 /*# sourceMappingURL=app.css.map */

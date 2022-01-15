@@ -21,7 +21,10 @@ body {
     color : $body-text;
     line-height: $line-height;
     font-family: 'Raleway', sans-serif;
-    
+    padding: 8px 20px;
+    @media (min-width:600px)  {
+        padding: 0;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {

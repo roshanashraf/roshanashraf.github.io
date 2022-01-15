@@ -1,3 +1,41 @@
+
+.header-section {
+    .logo {
+        margin-bottom: $size-16-px;
+    }
+
+    .img-color {
+        height: 100%;
+        margin: 0px 80px;
+        border-radius: $size-16-px;
+
+        img {
+            width: 400px;
+        }
+    }
+    .hey-there{
+        @extend h2;
+    }
+    .sub-title{
+        @extend h5;    }
+    .desc{
+        font-size: $size-14-px;
+    }
+}
+
+.media-links {
+    display: flex;
+
+    .icon-btn {
+        margin-right: 4px;
+
+        img {
+            height: 24px;
+        }
+    }
+
+}
+
 .work-card-wrapper {
     display: flex;
     flex-direction: column;
@@ -52,10 +90,22 @@
 
 }
 
+.work-card-col{
+    &:not(:last-child){
+        .work-card-new{
+            margin-bottom: 30px;
+        border-bottom: 1px solid $border-color;
+        }
+        
+    }
+}
+
 .work-card-new {
     position: relative;
     display: block;
-    margin-bottom: 30px;
+    
+    
+    
 
     .work-img {
         width: 100%;
@@ -63,8 +113,11 @@
     }
 
     .details {
-        margin-top: 12px;
+        margin-top: 4px;
         .title {
+            font-size: $size-16-px;
+            font-weight: 600;
+            color: $primary-text;
             margin-bottom: 4px;
             
         }
@@ -73,6 +126,7 @@
             font-size: $size-12-px;
             color: $body-text;
         }
+        padding-bottom: 8px ;
     }
     
 
@@ -104,9 +158,16 @@
                 display: block;
                 position: absolute;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                left: 30%;
+                transform: translate(-20%, -50%);
                 text-align: center;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0px 20px 50px rgb(18 17 39 / 8%);
+                .desc{
+                    margin-bottom: $size-16-px;
+                }
             }
         }
     }
@@ -169,32 +230,7 @@
 
 }
 
-
-.header-section {
-    .logo {
-        margin-bottom: $size-16-px;
-    }
-
-    .img-color {
-        height: 100%;
-        margin: 0px 80px;
-        border-radius: $size-16-px;
-
-        img {
-            width: 400px;
-        }
-    }
+.footer-section{
+    font-size: $size-12-px;
 }
 
-.media-links {
-    display: flex;
-
-    .icon-btn {
-        margin-right: 4px;
-
-        img {
-            height: 24px;
-        }
-    }
-
-}

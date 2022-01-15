@@ -79,23 +79,23 @@
 }
 
 .p-14 {
-  padding: 1rem;
+  padding: 0.875rem;
 }
 
 .pt-14 {
-  padding-top: 1rem;
+  padding-top: 0.875rem;
 }
 
 .pb-14 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.875rem;
 }
 
 .pl-14 {
-  padding-left: 1rem;
+  padding-left: 0.875rem;
 }
 
 .pr-14 {
-  padding-right: 1rem;
+  padding-right: 0.875rem;
 }
 
 .p-16 {
@@ -119,43 +119,43 @@
 }
 
 .p-20 {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .pt-20 {
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
 }
 
 .pb-20 {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
 }
 
 .pl-20 {
-  padding-left: 1.5rem;
+  padding-left: 1.25rem;
 }
 
 .pr-20 {
-  padding-right: 1.5rem;
+  padding-right: 1.25rem;
 }
 
 .p-24 {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .pt-24 {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .pb-24 {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-24 {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 .pr-24 {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 .m-4 {
@@ -239,23 +239,23 @@
 }
 
 .m-14 {
-  margin: 1rem;
+  margin: 0.875rem;
 }
 
 .mt-14 {
-  margin-top: 1rem;
+  margin-top: 0.875rem;
 }
 
 .mb-14 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
 }
 
 .ml-14 {
-  margin-left: 1rem;
+  margin-left: 0.875rem;
 }
 
 .mr-14 {
-  margin-right: 1rem;
+  margin-right: 0.875rem;
 }
 
 .m-16 {
@@ -279,43 +279,43 @@
 }
 
 .m-20 {
-  margin: 1.5rem;
+  margin: 1.25rem;
 }
 
 .mt-20 {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .mb-20 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .ml-20 {
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 
 .mr-20 {
-  margin-right: 1.5rem;
+  margin-right: 1.25rem;
 }
 
 .m-24 {
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .mt-24 {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .mb-24 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .ml-24 {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .mr-24 {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 html {
@@ -323,7 +323,7 @@ html {
 }
 
 .typography .row {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .shadow-1, .btn.icon-btn:hover {
@@ -370,7 +370,7 @@ h4 {
 }
 
 h5, .header-section .sub-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.4;
 }
 
@@ -391,8 +391,9 @@ h6 {
 }
 
 .section-header {
-  margin-bottom: 32px;
+  margin-bottom: 1.25rem;
   font-size: 1.5rem;
+  color: #171918;
   font-weight: 600;
 }
 
@@ -433,7 +434,7 @@ a {
   width: 400px;
 }
 .header-section .desc {
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .media-links {
@@ -454,9 +455,9 @@ a {
 .work-card {
   display: flex;
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .work-card .img-wrapper {
   height: 200px;
@@ -468,7 +469,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 .work-card .content .title-section {
   display: flex;
@@ -498,6 +499,18 @@ a {
   position: relative;
   display: block;
 }
+.work-card-new .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #171918;
+  display: flex;
+  align-items: center;
+}
+.work-card-new .card-title .date {
+  font-size: 0.875rem;
+  color: #97A1B5;
+  margin-left: 8px;
+}
 .work-card-new .work-img {
   width: 100%;
 }
@@ -506,19 +519,23 @@ a {
   padding-bottom: 8px;
 }
 .work-card-new .details .title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #171918;
   margin-bottom: 4px;
+  display: none;
 }
 .work-card-new .details .desc {
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #3E4445;
 }
 .work-card-new .details .btn {
   display: none;
 }
 @media (min-width: 1025px) {
+  .work-card-new .card-title {
+    display: none;
+  }
   .work-card-new .details {
     display: none;
   }
@@ -536,7 +553,8 @@ a {
     backdrop-filter: blur(2px);
   }
   .work-card-new:hover .details {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 30%;
@@ -548,25 +566,28 @@ a {
     box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
   }
   .work-card-new:hover .details .title {
-    font-size: 1.5rem;
+    display: block;
+    font-size: 1.25rem;
   }
   .work-card-new:hover .details .desc {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .work-card-new:hover .details .btn {
     display: block;
+    flex-grow: 0;
+    align-self: center;
   }
 }
 
 .social-media-card {
   display: flex;
   background-color: white;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 1rem;
   border: 1px solid #E5E5EB;
   text-decoration: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 .social-media-card .img-wrapper {
   height: 32px;
@@ -582,7 +603,7 @@ a {
 }
 @media (min-width: 1025px) {
   .social-media-card .content .desc {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 .social-media-card:hover .content .title {

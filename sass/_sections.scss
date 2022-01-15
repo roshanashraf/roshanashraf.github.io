@@ -62,58 +62,18 @@
 
 }
 
-.work-card-wrapper {
-    display: flex;
-    flex-direction: column;
 
-}
+.truncate-overflow {
 
-.work-card {
-    display: flex;
-    background-color: white;
-    padding: $size-20-px;
-    border-radius: $size-16-px;
-    margin-bottom: $size-20-px;
+    max-height: calc(1.5rem * 4);
+    overflow: hidden;
 
-    .img-wrapper {
-        height: 200px;
-        width: 400px;
-        flex-shrink: 0;
-        background-color: $background-color;
+    &::before {
+        content: "...";
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: $size-20-px;
-
-        .title-section {
-            display: flex;
-            justify-content: space-between;
-
-
-        }
-
-        .truncate-overflow {
-
-            max-height: calc(1.5rem * 4);
-            overflow: hidden;
-
-            &::before {
-                content: "...";
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
-        }
-
-        .work-card-footer {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
 }
 
 .work-card-col {

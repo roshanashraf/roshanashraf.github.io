@@ -472,47 +472,15 @@ a {
   height: 24px;
 }
 
-.work-card-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.work-card {
-  display: flex;
-  background-color: white;
-  padding: 1.25rem;
-  border-radius: 1rem;
-  margin-bottom: 1.25rem;
-}
-.work-card .img-wrapper {
-  height: 200px;
-  width: 400px;
-  flex-shrink: 0;
-  background-color: #F1F5F6;
-}
-.work-card .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 1.25rem;
-}
-.work-card .content .title-section {
-  display: flex;
-  justify-content: space-between;
-}
-.work-card .content .truncate-overflow {
+.truncate-overflow {
   max-height: calc(1.5rem * 4);
   overflow: hidden;
 }
-.work-card .content .truncate-overflow::before {
+.truncate-overflow::before {
   content: "...";
   position: absolute;
   bottom: 0;
   right: 0;
-}
-.work-card .content .work-card-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 .work-card-col:not(:last-child) .work-card-new {

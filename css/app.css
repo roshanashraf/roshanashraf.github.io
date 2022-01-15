@@ -367,7 +367,7 @@ h6 {
   font-size: 1rem;
 }
 
-.body-small, .work-card-new:hover .details .desc {
+.body-small, .social-media-card .content .desc, .work-card-new:hover .details .desc {
   font-size: 14px;
 }
 

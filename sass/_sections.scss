@@ -130,6 +130,7 @@
         }
 
         .desc {
+            @extend .body-small;
             color: $body-text;
         }
     }

@@ -570,7 +570,7 @@ a {
   font-size: 0.75rem;
   color: #3E4445;
 }
-@media (min-width: 600px) {
+@media (min-width: 1025px) {
   .social-media-card .content .desc {
     font-size: 1rem;
   }

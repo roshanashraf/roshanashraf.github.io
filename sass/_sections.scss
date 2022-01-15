@@ -200,7 +200,7 @@
         .desc {
             font-size: $size-12-px;
             color: $body-text;
-            @media (min-width:600px)  {
+            @media (min-width:1025px)  {
                 font-size: $size-14-px;
             }
         }

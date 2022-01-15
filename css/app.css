@@ -515,6 +515,9 @@ a {
   font-size: 0.75rem;
   color: #3E4445;
 }
+.work-card-new .details .btn {
+  display: none;
+}
 @media (min-width: 1025px) {
   .work-card-new .details {
     display: none;
@@ -546,6 +549,9 @@ a {
   }
   .work-card-new:hover .details .desc {
     margin-bottom: 1rem;
+  }
+  .work-card-new:hover .details .btn {
+    display: block;
   }
 }
 

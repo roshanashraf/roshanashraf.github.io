@@ -504,11 +504,10 @@ a {
   font-weight: 600;
   color: #171918;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .work-card-new .card-title .date {
   font-size: 0.875rem;
-  color: #97A1B5;
   margin-left: 8px;
 }
 .work-card-new .work-img {
@@ -567,7 +566,11 @@ a {
   }
   .work-card-new:hover .details .title {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+  .work-card-new:hover .details .title .date {
+    font-size: 0.875rem;
+    margin-left: 8px;
   }
   .work-card-new:hover .details .desc {
     margin-bottom: 1rem;

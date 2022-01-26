@@ -449,6 +449,7 @@ a {
 }
 .header-section .desc {
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 @media (min-width: 1025px) {
   .header-section .hey-there {
@@ -458,7 +459,8 @@ a {
     font-size: 28px;
   }
   .header-section .desc {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 

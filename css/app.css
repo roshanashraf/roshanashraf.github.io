@@ -551,15 +551,18 @@ a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 70%;
-    transform: translate(-20%, -50%);
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    background-color: #fff;
+    padding: 20px;
+  }
+  .work-card-new:hover .details .detail-card {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+    box-shadow: 0px 12px 40px rgba(18, 17, 39, 0.16);
+    background-color: #fff;
   }
   .work-card-new:hover .details .title {
     display: block;
@@ -570,10 +573,10 @@ a {
     margin-left: 6px;
   }
   .work-card-new:hover .details .desc {
-    margin-bottom: 1rem;
     font-size: 0.875rem;
   }
   .work-card-new:hover .details .btn {
+    margin-top: 1rem;
     display: block;
     flex-grow: 0;
     align-self: center;

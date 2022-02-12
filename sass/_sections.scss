@@ -240,29 +240,29 @@
         font-weight: 500;
         padding: 24px;
         color: #fff;
-        display: none;
+        transition: visibility 600ms cubic-bezier(.4,0,.2,1),opacity 600ms cubic-bezier(.4,0,.2,1);
+        will-change: opacity;
+        background: linear-gradient(139deg, #00000073, #00000000);
+        
     }
+    
 
     @media (min-width:$laptop-breakpoint) {
+
         width: 50%;
+        .title, .card-overlay{
+        display: none;
+
+        }
         
         &:hover {
+            display: block;
             .title {
                 display: block;
             }
 
             // transform: scale(1.1);
-            .card-overlay {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                top: 0;
-                background: linear-gradient(173deg, #000000ab, #00000063);
-                // backdrop-filter: blur(2px);
-
-            }
+            
         }
     }
 }

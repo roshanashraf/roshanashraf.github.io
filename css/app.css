@@ -609,23 +609,22 @@ a {
   font-weight: 500;
   padding: 24px;
   color: #fff;
-  display: none;
+  transition: visibility 600ms cubic-bezier(0.4, 0, 0.2, 1), opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+  background: linear-gradient(139deg, #00000073, #00000000);
 }
 @media (min-width: 1025px) {
   .grid-item {
     width: 50%;
   }
-  .grid-item:hover .title {
+  .grid-item .title, .grid-item .card-overlay {
+    display: none;
+  }
+  .grid-item:hover {
     display: block;
   }
-  .grid-item:hover .card-overlay {
+  .grid-item:hover .title {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: linear-gradient(173deg, #000000ab, #00000063);
   }
 }
 

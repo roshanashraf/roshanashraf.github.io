@@ -631,22 +631,26 @@ a {
 
 .social-media-section {
   padding: 8px 20px;
-  background-color: #e2e2ff;
+  background-color: #171918;
+  color: #fff;
 }
 @media (min-width: 600px) {
   .social-media-section {
     padding: 0;
   }
 }
+.social-media-section .section-header {
+  color: #fff;
+}
 
 .social-media-card {
   display: flex;
-  background-color: white;
   padding: 1.25rem;
   border-radius: 1rem;
-  border: 1px solid #E5E5EB;
+  border: 1px solid #e5e5eb14;
   text-decoration: none;
   margin-bottom: 1.25rem;
+  color: white;
 }
 .social-media-card .img-wrapper {
   height: 32px;
@@ -655,10 +659,12 @@ a {
 }
 .social-media-card .content .title {
   margin-bottom: 8px;
+  color: white;
+  font-weight: 500;
 }
 .social-media-card .content .desc {
   font-size: 0.75rem;
-  color: #3E4445;
+  color: #ffffffbd;
 }
 @media (min-width: 1025px) {
   .social-media-card .content .desc {
@@ -681,6 +687,7 @@ a {
 }
 
 .footer-section {
+  background-color: #171918;
   font-size: 0.75rem;
 }
 

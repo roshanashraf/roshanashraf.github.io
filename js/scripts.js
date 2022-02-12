@@ -5,4 +5,16 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-// import lottieWeb from 'https://cdn.skypack.dev/lottie-web';
+
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item'
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});

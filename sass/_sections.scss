@@ -1,4 +1,6 @@
 .header-section {
+    background-color: $bg-dark;
+    color: white;
     padding: 8px 20px;
 
     // background: linear-gradient(140deg, #e2dcff00, #ff6bd282);
@@ -24,35 +26,37 @@
     .hey-there {
         font-size: 40px;
         line-height: 1.4;
-        font-weight: 600;
         margin-bottom: $size-12-px;
-        color: $primary-text;
-
+        color: white;
+        letter-spacing: -0.01em;
     }
 
     .sub-title {
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: $size-12-px;
-        color: $primary-text;
+        color: white;
+        letter-spacing: -0.01em;
+        opacity: $sec-text-opacity;
     }
 
     .desc {
-        font-size: $size-16-px;
+        font-size: $size-14-px;
+        opacity: $sec-text-opacity;
         line-height: 1.5;
     }
 
     @media (min-width:$laptop-breakpoint) {
         .hey-there {
-            font-size: 56px;
+            font-size: 48px;
         }
 
         .sub-title {
-            font-size: 32px;
+            font-size: 24px;
         }
 
         .desc {
-            font-size: $size-18-px;
+            font-size: $size-16-px;
             line-height: 1.5;
         }
     }
@@ -159,6 +163,7 @@
 
     a {
         color: white;
+        opacity: $sec-text-opacity;
         text-decoration: underline;
         text-underline-offset: 2px;
 
@@ -166,11 +171,12 @@
             text-decoration: none;
 
             &:hover {
+                opacity: 1;
                 text-decoration: underline;
             }
         }
     }
-
+    
     .contact-me {
         margin-bottom: $size-24-px;
 
@@ -181,6 +187,7 @@
 
         .contact-me {
             margin-bottom: 0;
+            opacity: $sec-text-opacity;
         }
     }
 
@@ -190,7 +197,7 @@
 
     .social-links {
         display: flex;
-
+        opacity: $sec-text-opacity;
         flex-wrap: wrap;
 
         a {
@@ -208,25 +215,6 @@
     }
 }
 
-
-.social-media-section {
-    
-    background-color: $brand-primary;
-    color: #fff;
-
-    padding: 8px 20px;
-    @media (min-width:600px) {
-        padding: 0;
-    }
-
-    .section-header {
-        color: #fff;
-    }
-
-    .footer-text {
-        font-size: $size-14-px;
-    }
-}
 
 .about-section {
     background-color: $bg-dark;

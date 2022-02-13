@@ -20,7 +20,8 @@ body {
     background-color: $white;
     color: $body-text;
     line-height: $line-height;
-    letter-spacing: -0.01em;
+    
+    font-weight: 300;
     font-family: 'Sora', sans-serif;
     
 }
@@ -34,7 +35,7 @@ h6 {
     font-weight: 600;
     margin-bottom: $size-12-px;
     color: $primary-text;
-
+    letter-spacing: -0.01em;
 }
 
 h1 {

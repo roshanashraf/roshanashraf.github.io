@@ -591,9 +591,9 @@ a {
 }
 
 .social-media-section {
-  padding: 8px 20px;
   background-color: #171918;
   color: #fff;
+  padding: 8px 20px;
 }
 @media (min-width: 600px) {
   .social-media-section {
@@ -608,13 +608,21 @@ a {
 }
 
 .about-section {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 8px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+}
 .about-section .name {
   font-size: 32px;
-  color: #171918;
+  color: white;
 }
 .about-section .img-section {
   display: flex;
@@ -644,14 +652,22 @@ a {
   }
 }
 
+.about-me {
+  padding: 8px 20px;
+}
+@media (min-width: 600px) {
+  .about-me {
+    padding: 0;
+  }
+}
 .about-me .fact-item {
-  height: 100vh;
+  min-height: 80vh;
 }
 .about-me .fact-item .img-section {
   display: flex;
 }
 .about-me .fact-item .img-section img {
-  width: 200px;
+  width: 160px;
   object-fit: contain;
 }
 .about-me .fact-item .fact-content {
@@ -659,12 +675,15 @@ a {
 }
 @media (min-width: 1025px) {
   .about-me .fact-item {
-    height: 60vh;
+    min-height: 60vh;
     align-items: center;
   }
   .about-me .fact-item .img-section {
     justify-content: end;
     padding-right: 40px;
+  }
+  .about-me .fact-item .img-section img {
+    width: 200px;
   }
 }
 

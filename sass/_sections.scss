@@ -154,7 +154,7 @@
 
 .footer-section {
     padding: 8px 20px;
-    background-color: #1c1c1c;
+    background-color: $bg-dark;
     color: #fff;
 
     a {
@@ -210,10 +210,11 @@
 
 
 .social-media-section {
-    padding: 8px 20px;
+    
     background-color: $brand-primary;
     color: #fff;
 
+    padding: 8px 20px;
     @media (min-width:600px) {
         padding: 0;
     }
@@ -228,12 +229,19 @@
 }
 
 .about-section {
+    background-color: $bg-dark;
+    color: white;
+    padding: 8px 20px;
+    @media (min-width:600px) {
+        padding: 0;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     .name {
         font-size: $size-32-px;
-        color: $primary-text;
+        color: white;
     }
     .img-section{
         display: flex;
@@ -266,8 +274,13 @@
 
 
 .about-me {
+    padding: 8px 20px;
+    @media (min-width:600px) {
+        padding: 0;
+    }
+
     .fact-item {
-        height: 100vh;
+        min-height: 80vh;
        
 
         .img-section {
@@ -275,7 +288,7 @@
            
 
             img {
-                width: 200px;
+                width: 160px;
                 object-fit: contain;
             }
         }
@@ -289,11 +302,14 @@
         // }
 
         @media (min-width:$laptop-breakpoint) {
-            height: 60vh;
+            min-height: 60vh;
             align-items: center;
             .img-section {
                 justify-content: end;
                 padding-right: 40px;
+                img {
+                    width: 200px;
+                }
             }
         }
     }

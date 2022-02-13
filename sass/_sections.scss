@@ -231,18 +231,33 @@
 
 .about-me {
     .fact-item {
-        position: relative;
-
+        display: flex;
+        background-color: #fff;
+        border-radius: 16px;
+        align-items: center;
+        box-shadow: 2px 4px 24px #00000017;
+        padding: 20px;
         .count {
+         
             font-size: 120px;
-            position: absolute;
             color: #a7a7a7;
-            top: -100px;
             opacity: 0.2;
+            margin-right: 28px;
+            flex-shrink: 0;
+            width: 80px;
+            @media (min-width:$laptop-breakpoint) {
+                justify-content: end;
+                font-size: 120px;
+                width: 80px;
+            }
         }
 
         .fact-content {
-            font-size: $size-24-px;
+            font-size: $size-20-px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
         }
     }
 }

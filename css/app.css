@@ -609,17 +609,33 @@ a {
 }
 
 .about-me .fact-item {
-  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 16px;
+  align-items: center;
+  box-shadow: 2px 4px 24px #00000017;
+  padding: 20px;
 }
 .about-me .fact-item .count {
   font-size: 120px;
-  position: absolute;
   color: #a7a7a7;
-  top: -100px;
   opacity: 0.2;
+  margin-right: 28px;
+  flex-shrink: 0;
+  width: 80px;
+}
+@media (min-width: 1025px) {
+  .about-me .fact-item .count {
+    justify-content: end;
+    font-size: 120px;
+    width: 80px;
+  }
 }
 .about-me .fact-item .fact-content {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+.about-me .fact-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 #site-header.sticky.animate {

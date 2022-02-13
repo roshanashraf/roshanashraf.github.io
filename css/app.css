@@ -608,34 +608,52 @@ a {
   font-size: 0.875rem;
 }
 
-.about-me .fact-item {
-  display: flex;
-  background-color: #fff;
-  border-radius: 16px;
-  align-items: center;
-  box-shadow: 2px 4px 24px #00000017;
-  padding: 20px;
+.about-section .name {
+  font-size: 32px;
+  color: #171918;
 }
-.about-me .fact-item .count {
-  font-size: 120px;
-  color: #a7a7a7;
-  opacity: 0.2;
-  margin-right: 28px;
-  flex-shrink: 0;
-  width: 80px;
+.about-section .img-section {
+  display: flex;
+}
+.about-section .hero-img {
+  width: 240px;
+}
+.about-section .arrow-work {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 @media (min-width: 1025px) {
-  .about-me .fact-item .count {
-    justify-content: end;
-    font-size: 120px;
-    width: 80px;
+  .about-section {
+    height: 100vh;
+  }
+  .about-section .name {
+    font-size: 48px;
   }
 }
-.about-me .fact-item .fact-content {
-  font-size: 1.25rem;
+
+.about-me .fact-item {
+  height: 100vh;
 }
-.about-me .fact-item:not(:last-child) {
-  margin-bottom: 32px;
+.about-me .fact-item .img-section {
+  display: flex;
+}
+.about-me .fact-item .img-section img {
+  width: 200px;
+  object-fit: contain;
+}
+.about-me .fact-item .fact-content {
+  font-size: 1rem;
+}
+@media (min-width: 1025px) {
+  .about-me .fact-item {
+    height: 60vh;
+    align-items: center;
+  }
+  .about-me .fact-item .img-section {
+    justify-content: end;
+    padding-right: 40px;
+  }
 }
 
 #site-header.sticky.animate {

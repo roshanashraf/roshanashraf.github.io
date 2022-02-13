@@ -228,36 +228,64 @@
     }
 }
 
+.about-section {
+
+    .name {
+        font-size: $size-32-px;
+        color: $primary-text;
+    }
+    .img-section{
+        display: flex;
+    }
+
+    .hero-img{
+        width: 240px;
+    }
+
+    .arrow-work {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    @media (min-width:$laptop-breakpoint) {
+        height: 100vh;
+        .name {
+            font-size: 48px;
+        }
+    }
+}
+
 
 .about-me {
     .fact-item {
-        display: flex;
-        background-color: #fff;
-        border-radius: 16px;
-        align-items: center;
-        box-shadow: 2px 4px 24px #00000017;
-        padding: 20px;
-        .count {
-         
-            font-size: 120px;
-            color: #a7a7a7;
-            opacity: 0.2;
-            margin-right: 28px;
-            flex-shrink: 0;
-            width: 80px;
-            @media (min-width:$laptop-breakpoint) {
-                justify-content: end;
-                font-size: 120px;
-                width: 80px;
+        height: 100vh;
+       
+
+        .img-section {
+            display: flex;
+           
+
+            img {
+                width: 200px;
+                object-fit: contain;
             }
         }
 
         .fact-content {
-            font-size: $size-20-px;
+            font-size: $size-16-px;
         }
 
-        &:not(:last-child) {
-            margin-bottom: 32px;
+        // &:not(:last-child) {
+        //     margin-bottom: 32px;
+        // }
+
+        @media (min-width:$laptop-breakpoint) {
+            height: 60vh;
+            align-items: center;
+            .img-section {
+                justify-content: end;
+                padding-right: 40px;
+            }
         }
     }
 }

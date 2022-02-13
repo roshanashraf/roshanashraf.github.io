@@ -391,10 +391,14 @@ h6 {
 }
 
 .section-header {
-  margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
   color: #171918;
-  font-weight: 600;
+}
+@media (min-width: 1025px) {
+  .section-header {
+    font-size: 32px;
+  }
 }
 
 .bg-primary {
@@ -456,7 +460,7 @@ a {
   color: #171918;
 }
 .header-section .desc {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 @media (min-width: 1025px) {
@@ -511,10 +515,10 @@ a {
   width: 100%;
   transition: visibility 600ms cubic-bezier(0.4, 0, 0.2, 1), opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
   will-change: opacity;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   font-weight: 500;
-  padding: 24px;
+  padding: 16px 20px;
   color: #fff;
   transition: visibility 600ms cubic-bezier(0.4, 0, 0.2, 1), opacity 600ms cubic-bezier(0.4, 0, 0.2, 1);
   will-change: opacity;
@@ -524,7 +528,10 @@ a {
   .grid-item {
     width: 50%;
   }
-  .grid-item .title, .grid-item .card-overlay {
+  .grid-item .title,
+.grid-item .card-overlay {
+    padding: 24px;
+    font-size: 20px;
     display: none;
   }
   .grid-item:hover {
@@ -532,6 +539,54 @@ a {
   }
   .grid-item:hover .title {
     display: block;
+  }
+}
+
+.footer-section {
+  padding: 8px 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.footer-section a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (min-width: 1025px) {
+  .footer-section a {
+    text-decoration: none;
+  }
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+}
+.footer-section .contact-me {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1025px) {
+  .footer-section {
+    padding: 0;
+  }
+  .footer-section .contact-me {
+    margin-bottom: 0;
+  }
+}
+.footer-section .section-header {
+  color: #fff;
+}
+.footer-section .social-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-section .social-links a {
+  font-size: 0.875rem;
+}
+.footer-section .social-links a:not(:last-child) {
+  margin-right: 12px;
+}
+@media (min-width: 1025px) {
+  .footer-section .social-links {
+    justify-content: end;
   }
 }
 
@@ -593,11 +648,6 @@ a {
 }
 .social-media-card.email-card .desc {
   color: #F1F5F6;
-}
-
-.footer-section {
-  background-color: #171918;
-  font-size: 0.75rem;
 }
 
 #site-header.sticky.animate {

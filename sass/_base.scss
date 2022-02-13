@@ -80,12 +80,12 @@ h6 {
 }
 
 .section-header {
-    margin-bottom: $size-20-px;
-    font-size: $size-24-px;
+    margin-bottom: $size-16-px;
+    font-size: $size-20-px;
     color: $primary-text;
-    // text-transform: uppercase;
-    // letter-spacing: 4px;
-    font-weight: 600;
+    @media (min-width:$laptop-breakpoint) {
+        font-size: $size-32-px;
+    }
 }
 
 

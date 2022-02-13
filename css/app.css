@@ -504,6 +504,7 @@ a {
 
 .grid-item img {
   width: 100%;
+  background: url("../assets/loader.svg") no-repeat;
 }
 .grid-item .title {
   position: absolute;

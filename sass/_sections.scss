@@ -1,29 +1,46 @@
 .navbar {
     background-color: $bg-dark;
+
     .navbar-brand {
         img {
             width: 80px;
         }
     }
 
-    .navbar-collapse {
+    .navbar-links {
         justify-content: end;
 
         .navbar-nav {
+            justify-content: end;
+            flex-direction: row;
 
-            a {
-                color: white;
-                opacity: $sec-text-opacity;
-                text-decoration: underline;
-                text-underline-offset: 2px;
+            li {
 
-                @media (min-width:$laptop-breakpoint) {
-                    text-decoration: none;
 
-                    &:hover, &.active {
-                        opacity: 1;
-                        text-decoration: underline;
+                a {
+                    color: white;
+                    opacity: $sec-text-opacity;
+                    
+                    text-underline-offset: 2px;
+
+                    @media (min-width:$laptop-breakpoint) {
+                        text-decoration: none;
+
+                        &:hover,
+                        &.active {
+                            opacity: 1;
+                            text-decoration: underline;
+                        }
                     }
+
+                }
+
+                &:not(:last-child) {
+                    a {
+                        margin-right: 12px;
+                    }
+
+
                 }
             }
         }

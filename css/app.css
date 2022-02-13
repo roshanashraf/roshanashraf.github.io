@@ -433,23 +433,29 @@ a {
 .navbar .navbar-brand img {
   width: 80px;
 }
-.navbar .navbar-collapse {
+.navbar .navbar-links {
   justify-content: end;
 }
-.navbar .navbar-collapse .navbar-nav a {
+.navbar .navbar-links .navbar-nav {
+  justify-content: end;
+  flex-direction: row;
+}
+.navbar .navbar-links .navbar-nav li a {
   color: white;
   opacity: 0.9;
-  text-decoration: underline;
   text-underline-offset: 2px;
 }
 @media (min-width: 1025px) {
-  .navbar .navbar-collapse .navbar-nav a {
+  .navbar .navbar-links .navbar-nav li a {
     text-decoration: none;
   }
-  .navbar .navbar-collapse .navbar-nav a:hover, .navbar .navbar-collapse .navbar-nav a.active {
+  .navbar .navbar-links .navbar-nav li a:hover, .navbar .navbar-links .navbar-nav li a.active {
     opacity: 1;
     text-decoration: underline;
   }
+}
+.navbar .navbar-links .navbar-nav li:not(:last-child) a {
+  margin-right: 12px;
 }
 
 .header-section {

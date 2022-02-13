@@ -538,6 +538,9 @@ a {
   border-bottom: 1px solid #E5E5EB;
 }
 
+.grid-item.w-33 {
+  width: 33.3%;
+}
 .grid-item img {
   width: 100%;
   background: url("../assets/loader.svg") no-repeat;

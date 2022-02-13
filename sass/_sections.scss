@@ -20,7 +20,7 @@
                 a {
                     color: white;
                     opacity: $sec-text-opacity;
-                    
+
                     text-underline-offset: 2px;
 
                     @media (min-width:$laptop-breakpoint) {
@@ -153,6 +153,9 @@
 
 .grid-item {
 
+    &.w-33{
+        width: 33.3%;
+    }
 
     img {
         width: 100%;

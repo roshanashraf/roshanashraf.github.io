@@ -607,47 +607,18 @@ a {
   font-size: 0.875rem;
 }
 
-.social-media-card {
-  display: flex;
-  padding: 1.25rem;
-  border-radius: 1rem;
-  border: 1px solid #e5e5eb14;
-  text-decoration: none;
-  margin-bottom: 1.25rem;
-  color: white;
+.about-me .fact-item {
+  position: relative;
 }
-.social-media-card .img-wrapper {
-  height: 32px;
-  width: 32px;
-  margin-right: 1rem;
+.about-me .fact-item .count {
+  font-size: 120px;
+  position: absolute;
+  color: #a7a7a7;
+  top: -100px;
+  opacity: 0.2;
 }
-.social-media-card .content .title {
-  margin-bottom: 8px;
-  color: white;
-  font-weight: 500;
-}
-.social-media-card .content .desc {
-  font-size: 0.75rem;
-  color: #ffffffbd;
-}
-@media (min-width: 1025px) {
-  .social-media-card .content .desc {
-    font-size: 0.875rem;
-  }
-}
-.social-media-card:hover .content .title {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.social-media-card.email-card {
-  background-color: #171918;
-  color: white;
-}
-.social-media-card.email-card .title {
-  color: white;
-}
-.social-media-card.email-card .desc {
-  color: #F1F5F6;
+.about-me .fact-item .fact-content {
+  font-size: 1.5rem;
 }
 
 #site-header.sticky.animate {

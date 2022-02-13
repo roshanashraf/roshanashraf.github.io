@@ -227,59 +227,21 @@
     }
 }
 
-.social-media-card {
-    display: flex;
-    padding: $size-20-px;
-    border-radius: $size-16-px;
-    border: 1px solid #e5e5eb14;
-    text-decoration: none;
-    margin-bottom: $size-20-px;
-    color: white;
 
+.about-me {
+    .fact-item {
+        position: relative;
 
-    .img-wrapper {
-        height: 32px;
-        width: 32px;
-        margin-right: $size-16-px;
-    }
-
-    .content {
-        .title {
-            margin-bottom: 8px;
-            color: white;
-            font-weight: 500;
+        .count {
+            font-size: 120px;
+            position: absolute;
+            color: #a7a7a7;
+            top: -100px;
+            opacity: 0.2;
         }
 
-        .desc {
-            font-size: $size-12-px;
-            color: #ffffffbd;
-
-            @media (min-width:$laptop-breakpoint) {
-                font-size: $size-14-px;
-            }
+        .fact-content {
+            font-size: $size-24-px;
         }
     }
-
-    &:hover {
-        .content {
-            .title {
-                text-decoration: underline;
-                text-underline-offset: 2px;
-            }
-        }
-    }
-
-    &.email-card {
-        background-color: $brand-primary;
-        color: white;
-
-        .title {
-            color: white;
-        }
-
-        .desc {
-            color: $background-color;
-        }
-    }
-
 }

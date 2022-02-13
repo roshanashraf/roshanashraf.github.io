@@ -455,7 +455,6 @@ a {
 .header-section .sub-title {
   font-size: 20px;
   line-height: 1.4;
-  font-weight: 600;
   margin-bottom: 0.75rem;
   color: #171918;
 }
@@ -608,6 +607,11 @@ a {
   font-size: 0.875rem;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about-section .name {
   font-size: 32px;
   color: #171918;
@@ -619,9 +623,14 @@ a {
   width: 240px;
 }
 .about-section .arrow-work {
-  display: flex;
+  display: none;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 120px;
+  flex-direction: column;
+  align-items: center;
+}
+.about-section .arrow-work .facts-hint {
+  margin-bottom: 12px;
 }
 @media (min-width: 1025px) {
   .about-section {
@@ -629,6 +638,9 @@ a {
   }
   .about-section .name {
     font-size: 48px;
+  }
+  .about-section .arrow-work {
+    display: flex;
   }
 }
 

@@ -427,6 +427,31 @@ a {
   display: inline-block;
 }
 
+.navbar {
+  background-color: #1c1c1c;
+}
+.navbar .navbar-brand img {
+  width: 80px;
+}
+.navbar .navbar-collapse {
+  justify-content: end;
+}
+.navbar .navbar-collapse .navbar-nav a {
+  color: white;
+  opacity: 0.9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+@media (min-width: 1025px) {
+  .navbar .navbar-collapse .navbar-nav a {
+    text-decoration: none;
+  }
+  .navbar .navbar-collapse .navbar-nav a:hover, .navbar .navbar-collapse .navbar-nav a.active {
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
+
 .header-section {
   background-color: #1c1c1c;
   color: white;

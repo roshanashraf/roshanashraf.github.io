@@ -1,3 +1,36 @@
+.navbar {
+    background-color: $bg-dark;
+    .navbar-brand {
+        img {
+            width: 80px;
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: end;
+
+        .navbar-nav {
+
+            a {
+                color: white;
+                opacity: $sec-text-opacity;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+
+                @media (min-width:$laptop-breakpoint) {
+                    text-decoration: none;
+
+                    &:hover, &.active {
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 .header-section {
     background-color: $bg-dark;
     color: white;

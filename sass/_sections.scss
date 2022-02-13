@@ -176,7 +176,7 @@
             }
         }
     }
-    
+
     .contact-me {
         margin-bottom: $size-24-px;
 
@@ -220,6 +220,7 @@
     background-color: $bg-dark;
     color: white;
     padding: 8px 20px;
+
     @media (min-width:600px) {
         padding: 0;
     }
@@ -227,15 +228,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .name {
         font-size: $size-32-px;
         color: white;
     }
-    .img-section{
+
+    .img-section {
         display: flex;
     }
 
-    .hero-img{
+    .hero-img {
         width: 240px;
     }
 
@@ -245,15 +248,24 @@
         margin-top: 120px;
         flex-direction: column;
         align-items: center;
-        .facts-hint{
+
+        .facts-hint {
             margin-bottom: 12px;
         }
     }
+
     @media (min-width:$laptop-breakpoint) {
         height: 100vh;
+
+        .img-section {
+            justify-content: end;
+            padding-right: 40px;
+        }
+
         .name {
             font-size: 48px;
         }
+
         .arrow-work {
             display: flex;
         }
@@ -263,17 +275,18 @@
 
 .about-me {
     padding: 8px 20px;
+
     @media (min-width:600px) {
         padding: 0;
     }
 
     .fact-item {
         min-height: 80vh;
-       
+
 
         .img-section {
             display: flex;
-           
+
 
             img {
                 width: 160px;
@@ -292,9 +305,11 @@
         @media (min-width:$laptop-breakpoint) {
             min-height: 60vh;
             align-items: center;
+
             .img-section {
                 justify-content: end;
                 padding-right: 40px;
+
                 img {
                     width: 200px;
                 }

@@ -637,6 +637,10 @@ a {
   .about-section {
     height: 100vh;
   }
+  .about-section .img-section {
+    justify-content: end;
+    padding-right: 40px;
+  }
   .about-section .name {
     font-size: 48px;
   }

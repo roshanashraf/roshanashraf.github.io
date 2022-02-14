@@ -101,10 +101,7 @@
             font-size: 48px;
         }
 
-        .sub-title {
-            font-size: 24px;
-        }
-
+       
         .desc {
             font-size: $size-16-px;
             line-height: 1.5;
@@ -270,7 +267,7 @@
         display: flex;
         opacity: $sec-text-opacity;
         flex-wrap: wrap;
-
+        justify-content: center;
         a {
             font-size: $size-14-px;
 
@@ -279,9 +276,6 @@
             }
         }
 
-        @media (min-width:$laptop-breakpoint) {
-            justify-content: end;
-        }
 
     }
 }

@@ -392,7 +392,6 @@ h6 {
 }
 
 .section-header {
-  margin-bottom: 1rem;
   font-size: 1.25rem;
   color: #171918;
 }
@@ -503,9 +502,6 @@ a {
   .header-section .hey-there {
     font-size: 48px;
   }
-  .header-section .sub-title {
-    font-size: 24px;
-  }
   .header-section .desc {
     font-size: 1rem;
     line-height: 1.5;
@@ -582,6 +578,26 @@ a {
   }
 }
 
+.grid-item.animate {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation: scaleUp 0.65s ease-in-out forwards;
+  animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleUp {
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .footer-section {
   padding: 8px 20px;
   background-color: #1c1c1c;
@@ -621,17 +637,13 @@ a {
   display: flex;
   opacity: 0.9;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-section .social-links a {
   font-size: 0.875rem;
 }
 .footer-section .social-links a:not(:last-child) {
   margin-right: 12px;
-}
-@media (min-width: 1025px) {
-  .footer-section .social-links {
-    justify-content: end;
-  }
 }
 
 .about-section {

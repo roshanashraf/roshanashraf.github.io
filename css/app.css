@@ -429,8 +429,13 @@ a {
 .navbar {
   background-color: #1c1c1c;
 }
-.navbar .navbar-brand img {
-  width: 80px;
+.navbar .my-logo img {
+  width: 48px;
+}
+@media (min-width: 1025px) {
+  .navbar .my-logo img {
+    width: 80px;
+  }
 }
 .navbar .navbar-links {
   justify-content: end;
@@ -442,10 +447,12 @@ a {
 .navbar .navbar-links .navbar-nav li a {
   color: white;
   opacity: 0.9;
+  font-size: 12px;
   text-underline-offset: 2px;
 }
 @media (min-width: 1025px) {
   .navbar .navbar-links .navbar-nav li a {
+    font-size: 14px;
     text-decoration: none;
   }
   .navbar .navbar-links .navbar-nav li a:hover, .navbar .navbar-links .navbar-nav li a.active {
@@ -461,6 +468,7 @@ a {
   background-color: #1c1c1c;
   color: white;
   padding: 8px 20px;
+  margin-top: -1px;
 }
 @media (min-width: 600px) {
   .header-section {
@@ -650,6 +658,7 @@ a {
   background-color: #1c1c1c;
   color: white;
   padding: 8px 20px;
+  margin-top: -1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -730,6 +739,19 @@ a {
   }
 }
 
+#facts-pointer {
+  animation: MoveUpDown 0.7s linear;
+  animation-iteration-count: 4;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
 #site-header.sticky.animate {
   transition: transform 250ms linear, background 150ms linear, padding 200ms linear !important;
   transform: translate3d(0, 0, 0) !important;

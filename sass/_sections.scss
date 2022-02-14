@@ -1,10 +1,15 @@
 .navbar {
     background-color: $bg-dark;
-
-    .navbar-brand {
+    // -webkit-backdrop-filter: saturate(180%) blur(20px);
+    // backdrop-filter: saturate(180%) blur(20px);
+    .my-logo {
         img {
-            width: 80px;
+            width: 48px;
+            @media (min-width:$laptop-breakpoint) {
+                width: 80px;
+            }
         }
+        
     }
 
     .navbar-links {
@@ -20,10 +25,11 @@
                 a {
                     color: white;
                     opacity: $sec-text-opacity;
-
+                    font-size: 12px;
                     text-underline-offset: 2px;
 
                     @media (min-width:$laptop-breakpoint) {
+                        font-size: 14px;
                         text-decoration: none;
 
                         &:hover,
@@ -52,6 +58,7 @@
     background-color: $bg-dark;
     color: white;
     padding: 8px 20px;
+    margin-top: -1px;
 
     // background: linear-gradient(140deg, #e2dcff00, #ff6bd282);
 
@@ -285,6 +292,7 @@
     background-color: $bg-dark;
     color: white;
     padding: 8px 20px;
+    margin-top: -1px;
 
     @media (min-width:600px) {
         padding: 0;
@@ -382,3 +390,17 @@
         }
     }
 }
+
+#facts-pointer{
+    animation: MoveUpDown 0.7s linear;
+    animation-iteration-count: 4;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+  }

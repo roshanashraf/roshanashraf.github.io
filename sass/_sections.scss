@@ -153,10 +153,14 @@
     }
 }
 
-
+#grid{
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+}
 
 .grid-item {
-
+    position: relative;
     &.w-33{
         width: 33.3%;
     }
@@ -190,7 +194,6 @@
 
     @media (min-width:$laptop-breakpoint) {
 
-        width: 50%;
 
         .title,
         .card-overlay {
@@ -324,6 +327,14 @@
 
         .facts-hint {
             margin-bottom: 12px;
+            color: white;
+            opacity: 0.9;
+            &:hover{
+                opacity: 1;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                text-decoration-color: $brand-primary;
+            }
         }
     }
 

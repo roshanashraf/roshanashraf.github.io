@@ -402,7 +402,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #171918 !important;
+  background-color: #1c1c1c !important;
 }
 
 .btn.icon-btn:hover {
@@ -542,6 +542,15 @@ a {
   border-bottom: 1px solid #E5E5EB;
 }
 
+#grid {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.grid-item {
+  position: relative;
+}
 .grid-item.w-33 {
   width: 33.3%;
 }
@@ -569,9 +578,6 @@ a {
   background: linear-gradient(139deg, #00000073, #00000000);
 }
 @media (min-width: 1025px) {
-  .grid-item {
-    width: 50%;
-  }
   .grid-item .title,
 .grid-item .card-overlay {
     padding: 24px;
@@ -687,6 +693,14 @@ a {
 }
 .about-section .arrow-work .facts-hint {
   margin-bottom: 12px;
+  color: white;
+  opacity: 0.9;
+}
+.about-section .arrow-work .facts-hint:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #40e0bb;
 }
 @media (min-width: 1025px) {
   .about-section {

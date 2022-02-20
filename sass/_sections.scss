@@ -4,6 +4,7 @@
     // backdrop-filter: saturate(180%) blur(20px);
     .my-logo {
         img {
+            filter : drop-shadow(0px 2px 2px #000);
             width: 48px;
             @media (min-width:$laptop-breakpoint) {
                 width: 80px;
@@ -157,6 +158,11 @@
     display: grid;
     grid-column: 2;
     grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+
+    @media (min-width:$tab-breakpoint) {
+        grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    }
+
     @media (min-width:$laptop-breakpoint) {
         grid-template-columns: repeat(auto-fill,minmax(33.33%,1fr));
     }
@@ -180,16 +186,13 @@
         text-align: left;
         opacity: 1;
         top: 0;
-        visibility: visible;
-        transition-delay: 800ms;
         width: 100%;
-        transition: visibility 600ms cubic-bezier(.4, 0, .2, 1), opacity 600ms cubic-bezier(.4, 0, .2, 1);
-        will-change: opacity;
         font-size: 16px;
-        text-align: left;
-        font-weight: 500;
+        font-weight: 400;
         padding: 16px 20px;
         color: #fff;
+        visibility: visible;
+        transition-delay: 800ms;
         transition: visibility 600ms cubic-bezier(.4, 0, .2, 1), opacity 600ms cubic-bezier(.4, 0, .2, 1);
         will-change: opacity;
         background: linear-gradient(139deg, #00000087, #00000070);
@@ -202,8 +205,8 @@
 
         .title,
         .card-overlay {
-            padding: 20px;
-            font-size: 16px;
+            padding: 16px;
+            font-size: 14px;
             display: none;
 
         }

@@ -26,7 +26,7 @@
                 a {
                     color: white;
                     opacity: $sec-text-opacity;
-                    font-size: 12px;
+                    font-size: 13px;
                     text-underline-offset: 2px;
 
                     @media (min-width:$laptop-breakpoint) {
@@ -44,7 +44,7 @@
 
                 &:not(:last-child) {
                     a {
-                        margin-right: 12px;
+                        margin-right: 10px;
                     }
 
 

@@ -448,7 +448,7 @@ a {
 .navbar .navbar-links .navbar-nav li a {
   color: white;
   opacity: 0.9;
-  font-size: 12px;
+  font-size: 13px;
   text-underline-offset: 2px;
 }
 @media (min-width: 1025px) {
@@ -462,7 +462,7 @@ a {
   }
 }
 .navbar .navbar-links .navbar-nav li:not(:last-child) a {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .header-section {

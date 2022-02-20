@@ -708,7 +708,7 @@ a {
 }
 @media (min-width: 1025px) {
   .about-section {
-    height: 100vh;
+    height: 80vh;
   }
   .about-section .img-section {
     justify-content: end;

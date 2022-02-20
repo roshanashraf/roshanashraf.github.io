@@ -733,8 +733,17 @@ a {
     padding: 0;
   }
 }
+.about-me .facts-wrapper {
+  scroll-snap-type: y mandatory;
+}
 .about-me .fact-item {
-  min-height: 80vh;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+.about-me .fact-item .row {
+  align-items: center;
 }
 .about-me .fact-item .img-section {
   display: flex;

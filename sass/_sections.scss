@@ -372,10 +372,20 @@
         padding: 0;
     }
 
+    .facts-wrapper{
+        scroll-snap-type: y mandatory;
+        // height: 100vh;
+        // overflow: auto;
+    }
+
     .fact-item {
-        min-height: 80vh;
-
-
+        justify-content: center;
+        display: flex;
+        min-height: 100vh;
+        .row{
+            align-items: center;
+        }
+        scroll-snap-align: start;
         .img-section {
             display: flex;
 
